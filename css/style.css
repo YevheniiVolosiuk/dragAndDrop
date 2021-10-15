@@ -1,6 +1,5 @@
 /*Reset*/
 html {
-   -webkit-box-sizing: border-box;
    box-sizing: border-box;
 }
 
@@ -13,7 +12,6 @@ html {
 *,
 *:before,
 *:after {
-   -webkit-box-sizing: inherit;
    box-sizing: inherit;
 }
 
@@ -102,3 +100,74 @@ h6 {
 }
 
 /*--------------------*/
+body {
+   font-family: "Roboto", sans-serif;
+   background: linear-gradient(90deg, #ff758c 0%, #ff7eb3 100%);
+   display: flex;
+   padding-top: 5rem;
+   justify-content: center;
+   overflow: hidden;
+   margin: 0;
+}
+
+.row {
+   text-align: center;
+   display: flex;
+   width: 600px;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+}
+
+.col-header {
+   width: 150px;
+   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+   border-radius: 20px;
+   padding: 0.8rem 1rem;
+   color: #fff;
+}
+
+.item {
+   width: 150px;
+   height: 66px;
+   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+   border-radius: 20px;
+   background: linear-gradient(90deg, #bc4e9c 0%, #f80759 100%);
+   padding: 0.8rem 1rem;
+   text-align: center;
+   color: #fff;
+   text-align: center;
+   cursor: grab;
+}
+
+.item:active {
+   cursor: grabbing;
+}
+
+.placeholder {
+   width: 150px;
+   height: 66px;
+}
+
+.start {
+   background: linear-gradient(90deg, #bc4e9c 0%, #f80759 100%);
+}
+
+.progress {
+   background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+}
+
+.done {
+   background: linear-gradient(90deg, #bc4e9c 0%, #f80759 100%);
+}
+
+.hold {
+   border: 5px solid linear-gradient(90deg, #005aa7 0%, #fffde4 100%);
+}
+
+.hide {
+   display: none;
+}
+
+.hovered {
+   border-top: 2px solid #ffc3a0;
+}
